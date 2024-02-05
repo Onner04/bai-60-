@@ -1,0 +1,202 @@
+/* mobile & tablet */
+
+@media (max-width:1023px){
+   
+   .header{
+    display: none;
+   }
+   .header-mobile{
+    display:inline-block !important;
+    position: relative;
+    width: 100%;
+    margin-top: 9px;
+   }
+   .header-mobile-nav{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 11%;
+   }
+   .footer-grid-box{
+       width: 30%;
+   }
+   .footer-address{
+       width: 37%;
+       margin-left: -75px;
+   }
+   .footer-iframe{
+      width: 30%;
+   }
+   .slide-move__item-note-child{
+      margin-left: -70px;
+   }
+   .slide-move__item-note-child-1{
+           margin-left: -8px;
+   }
+   .slide-move__item-note-item-1 {
+    margin-left: -40px;
+    width: 120%;
+   }
+   .slide-move__item-note-item-2{
+    margin-left: 450px;
+    width: 57%;
+   }
+   .work__box-langguage-icon-child {
+    width: 25%;
+    margin-left: -35px;
+   }
+   .work-icon-add {
+     margin-left: 11px;
+   }
+   .active-1{
+    margin-top: 80px;
+     width: 70%;
+     height: 50%;
+   }
+   .container-work-post{
+     width: 25%;
+   }
+   .service-content__profuct-item {
+    width: 30%;
+    margin-left: 50px;
+   }
+   .container-service-content__product {
+    margin-left: -4px;
+   }
+   .container-service-content__note{
+    margin-left: 25%;
+   }
+   .container-service__fun {
+    margin-left: 38%;
+   }
+   .testimo-box-use__img{
+     margin-top: 18px;
+   }
+}
+
+
+
+/* mobile */
+@media (max-width:739px){
+    .silde-move__item-note{
+        margin-top: -45px;
+    }
+    .slide-move__item-note-child{
+        font-size: 3rem;
+        margin-left: 19px;
+    }
+    .slide-move__item-note-child-1{
+        font-size: 2.4rem;
+        margin-left: 110px;
+    }
+    .slide-move__item-note-item-1{
+        font-size: 2rem;
+        margin-left: 20px;
+    }
+    .slide-move__item-note-item-2{
+        font-size: 2rem;
+        margin-right: 130px;
+        width: 40%;
+        margin-top: 33px;
+    }
+    .slide-move__item-note-item-3{
+        font-size: 1.8rem;
+        width: 60%;
+        margin-left: 220px;
+        margin-top: 12px;
+    }
+    .container-about__box{
+        width: 50%;
+        margin-left: 20%;
+    }
+    .container-profile{
+        width: 50%;
+    }
+    .container-about__box:hover .container-profile{
+        margin-left: 12px;
+    }
+    .container-pro__img{
+        margin-left: 22%;
+    }
+    .container-about__icon,
+    .container-pro__list,
+    .container__pro-name{
+        width: 183%;
+    }
+    .container-pro__subject{
+        width: 200%;
+        margin-left: -11px;
+    }
+    .container-about__child{
+        display: block;
+    }
+    .container-about__child-content{
+     width: 104%;
+    }
+    .container-work__box{
+        display: block;
+        width: 100%;
+    }
+    .work__box-language{
+        width: 100%;
+    }
+    .work__box-img{
+        margin-top: -72px;
+        width: 100%;
+    }
+    .container-work-post{
+        width: 48%;
+        margin-left: 145px;
+    }
+    .container-service-content__note{
+          width: 100%;
+          margin-left: 4px;
+    }
+    .container-service-content__box{
+        margin-left: 31%;
+    }
+    .container-service-content__product{
+        display: block;
+        text-align: center;
+    }
+    .service-content__profuct-item{
+        width: 40%;
+        margin-left: 30%;
+         margin-top: 12px;
+         height: 257px;
+    }
+    .container-service-background{
+        height: 1200px;
+    }
+    .service-contant__product-item-select-box{
+       margin-top: 4px;
+    }
+    .testimo-box{
+        width: 75%;
+        margin-left: 90px;
+    }
+    .testimo-box-use__img{
+        width: 195%;
+    }
+    .footer-res{
+        display: inline-block;
+        width: 100%;
+    }
+    .footer-grid{
+        width: 100%;
+        display: block;
+    }
+    .footer-grid-box{
+        width: 100%;
+        margin-left: 29%;
+    }
+    .footer-address{
+        width: 75%;
+        margin-left: 15%;
+        margin-top: 20px;
+    }
+    .footer-iframe{
+     width: 100%;
+     margin-top: 20px;
+    }
+}

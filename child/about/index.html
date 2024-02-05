@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./access/css/main.css">
+    <link rel="stylesheet" href="./access/css/base.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="app">
+
+        <div class="header-mobile header-mobile-res">
+            <div class="header-mobile__left">
+                <h1 class="headee-mobile-pro">
+                    PORTFOLIO
+                </h1>
+            </div>
+            <div class="header-mobile-nav">
+                <div class="header-mobile-nav__img">
+    
+                    <img src="./access/img/my view.jpg" alt="" class="header-mobile__img">
+                </div>
+            </div>
+            <div class="header-mobile-nav__box">
+               <ul class="mobile-nav__list">
+                   <li class="mobile-nav__list-child">About</li>
+                   <li class="mobile-nav__list-child"> Portfolio Of Work</li>
+                   <li class="mobile-nav__list-child"> Services</li>
+                   <li class="mobile-nav__list-child"> Testimonials</li>
+                   <li class="mobile-nav__list-child"> Contact</li>
+               </ul>
+            </div>
+        </div>
+    
+        <header>
+            <div class="header">
+                <div class="header-left">
+                    <h1 class="header-left__pro">
+                        PORTFOLIO
+                    </h1>
+                </div>
+                <div class="header-nav">
+                    <ul class="header-nav__list">
+                        <li class="nav__list-child">
+                            <a href="https://onnerin.000webhostapp.com/about/" class="about-link">Home</a>
+                        </li>
+                        <li class="nav__list-child">
+                            <a href="https://onnerin.000webhostapp.com/about/" class="about-link">About</a>
+                        </li>
+                        <li class="nav__list-child">
+                            <a href="https://onnerin.000webhostapp.com/about/" class="about-link"> Portfolio Of Work</a>
+                        </li>
+                        <li class="nav__list-child">
+                            <a href="https://onnerin.000webhostapp.com/about/" class="about-link">Services</a>
+                        </li>
+                        <li class="nav__list-child">
+                            <a href="https://onnerin.000webhostapp.com/about/" class="about-link"> Testimonials</a>
+                        </li>
+                        <li class="nav__list-child">
+                            <a href="https://onnerin.000webhostapp.com/about/" class="about-link"> Contact</a>
+                        </li>
+                    </ul>
+                </div>
+    
+            </div>
+        </header>
+
+
+        <div class="container">
+            <div class="container-left">
+                <img src="./access/img/z4825249762460_1fb5e9e46c5cd9ab4fcfd8387d4bc7d4.jpg" alt="" class="containner-left__img">
+            </div>
+            <div class="container-right">
+                <p class="container-right__content-first">Về mình:</p>
+                <p class="container-right__content-center">ĐÀO VĂN THÀNH</p>
+                <p class="container-right__content-last" id="hightLight">Hiện tại mình đang là sinh viên năm 2 ngành công nghệ thông tin của trường Đại Học Thủ Đô.
+                    Mình có sở thích chơi game , nghe nhạc những lúc rảnh rỗi ,trong quá trình học mình đã tiếp thu được các kiến thức về HTML,CSS và Javascript 
+
+
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+   const hightLight=document.getElementById('hightLight');
+   const message=[
+    "Hiện tại mình đang là sinh viên năm 2 ngành công nghệ thông tin của trường Đại Học Thủ Đô. Mình có sở thích chơi game , nghe nhạc những lúc rảnh rỗi ,trong quá trình học mình đã tiếp thu được các kiến thức về HTML,CSS và Javascript "
+   ];
+   let messIndex=0;
+   let charIndex=0;
+   function typing(messIndex){
+    let currentMess=message[messIndex];
+    if(charIndex<currentMess.length){
+        let currentChar=currentMess.substring(0,charIndex+1);
+        hightLight.textContent=currentChar; 
+        charIndex++ ;
+    }
+    setTimeout(typing, 150,messIndex)
+   }
+   typing(0);
+</script>
+</html>

@@ -1,0 +1,26 @@
+*{
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+}
+:root{
+    --primari-color:#333e48;
+    --White-color : #fff;
+    --Black-color : #000;
+    --text-color : #252a2b;
+    --border-color: #dbdbdb; 
+    --header-height: 80px;
+    --header-height-mobile-table: 60px;
+}
+html{
+    scroll-behavior: smooth;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box; 
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    -webkit-tap-highlight-color: transparent;
+}
+.app{
+    overflow: hidden;
+    background-image: linear-gradient(to right, rgb(147, 240, 240),rgb(247, 164, 205));
+}
