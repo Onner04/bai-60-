@@ -305,6 +305,17 @@
     cursor: pointer;
     background-color: #999;
 }
+.about-btn{
+    background-color: var(--white-color);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 2rem;
+    color: var(--text-color);
+}
+.about-box__btn{
+    margin-top: 22px;
+    
+}
 .container-about__child-content{
    
     margin-top: 65px;
