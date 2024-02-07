@@ -22,4 +22,23 @@ html{
 }
 .app{
     overflow: hidden;
+    background-image: linear-gradient(to right, rgb(147, 240, 240),rgb(247, 164, 205))  !important;
+}
+
+@media (max-width:1023px){
+.header{
+    display: none;
+}
+
+.header-mobile{
+    display:inline-block !important;
+    z-index: 2;
+}
+.header-mobile-res{
+    display: flex;
+    justify-content: space-between;
+}
+.container-right__content-last {
+    width: 90%;
+}
 }

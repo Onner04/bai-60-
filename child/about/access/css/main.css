@@ -37,89 +37,83 @@
     background-color: #ececec;
 }
 
-/* mobile */
 .header-mobile{
+    width: 100%;
+    height: 70px;
     display: flex;
     justify-content: space-between;
-   background-color: rgba(0, 0, 0, 0.02);
-  
+    background-image: linear-gradient(to right, rgb(147, 240, 240),rgb(247, 164, 205));
+    position: relative;
+    z-index: 5;
 }
-.header-mobile-res{
+.mobile-nav{
     display: none;
 }
-.header-mobile-nav{
-    width: 20%;
+.header-mobile-left{
+    height: 70px;
+    line-height: 70px;
+    font-size: 2rem;
 }
-.header-mobile__left{
-    margin-left: 35px;
-    height: 50px;
-    line-height: 50px;
-   font-size: 1.5rem;
+.header-mobile-right{
+    width: 5%;
+    font-size: 2.5rem;
+
     
 }
-.header-mobile-nav__img{
-    display: inline-block;
-    width: 50%;
-    height: 35px;
+.header-mobile__nav-list-child-1{
+    padding-top: 30px;
 }
-.header-mobile__img{
-    margin-top: 5px;
-    width: 100%;
-    border-radius: 50%;
-    height: 45px;
-}
-.header-mobile-nav{
-    position: relative;
-}
-/* box-nav */
-.header-mobile-nav__box{
-    display: none;
-    position: absolute;
-    top: 0;
-    right: 0;
-     background-color: rgb(255, 255, 255);
-    z-index: 2;
-    width: 50%;
-    height: 100%;
-    animation: selectNav ease-in 0.4s;
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.8);
-}
-.mobile-nav__list{
-    width: 100%;
-    height: 100%;
-    margin-top: 35px;
-}
-.mobile-nav__list-child{
-    border-bottom: 1px solid #999;
-    padding: 12px;
+.header-mobile__nav-list-child{
+    padding: 20px 0;
     list-style: none;
-    text-align: center;
-   height: 5%;
-   line-height: 15px;
-   font-size: 1.5rem;
-   font-weight: 600;
-  
+    border-bottom: 1px solid #999;
 }
-.mobile-nav__list-child:hover{
+.mobile__nav-list-child-link{
+    list-style: none;
+    text-decoration: none;
+    color: var(--Black-color);
+}
+.header-mobile__nav-list-child:hover{
+    background-color: #999;
     cursor: pointer;
-    background-color: #ececec;
 }
-@keyframes selectNav{
+@keyframes navIn{
     from{
-        transform: translateX(150px);
+        transform: translateX(200px);
     }
     to{
         transform: translateX(0);
     }
 }
+.header-mobile__icon{
+    height: 70px;
+    line-height: 70px;
+}
+.header-mobile__nav{
+    position: absolute;
+    top: 0;
+    z-index: 5;
+    animation: navIn linear 1s;
+    display: none;
+}
+.header-mobile__nav-list{
+    height: 1200px;
+    background-color: #fabebe;
+    width: 230%;
+    margin-left: -190%;
+    text-align: center;
+}
 
+.active-nav{
+    display: inline-block !important;
+}
 
 /* container */
 .container{
     width: 100%;
     display: flex;
     justify-content: space-between;
-    background-color: blanchedalmond;
+    background-image: linear-gradient(to right, rgb(147, 240, 240),rgb(247, 164, 205))  !important;
     height: 630px;
 }
 .container-left{

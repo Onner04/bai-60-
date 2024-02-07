@@ -93,7 +93,7 @@ const startInterval = () => {
     
     setTime = setInterval(function(){
         Up ()
-    },11000)
+    },5000)
 }
 
 startInterval();
@@ -101,11 +101,27 @@ startInterval();
 slideUp.onclick = function(){
     Up ()
     clearInterval(setTime)
-    setTimeout(startInterval(), 11000)
+    setTimeout(startInterval(), 5000)
 }
 
 slideBack.onclick = function(){
     Back ()
     clearInterval(setTime)
-    setTimeout(startInterval(), 11000)
+    setTimeout(startInterval(), 5000)
+}
+
+function myclick(){
+    document.getElementById("click-nav").classList.toggle("active-nav");
+}
+window.onclick=function(event){
+    if(!event.target.matches('.icon-nav')){
+        var down=document.getElementsByClassName("header-mobile__nav")
+        var i;
+        for( i=0 ; i<down.length; i++){
+            var open =down[i];
+                if(open.classList.contains('active-nav')){
+                    open.classList.remove('active-nav');
+                }
+        }
+    }
 }

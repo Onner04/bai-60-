@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="./access/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="./access/css/base.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
@@ -10,26 +11,41 @@
 <body>
     <div class="app">
 
-        <div class="header-mobile header-mobile-res">
-            <div class="header-mobile__left">
-                <h1 class="headee-mobile-pro">
-                    PORTFOLIO
-                </h1>
-            </div>
-            <div class="header-mobile-nav">
-                <div class="header-mobile-nav__img">
-    
-                    <img src="./access/img/my view.jpg" alt="" class="header-mobile__img">
+        <div class="header-mobile mobile-nav" >
+            <div class="header-mobile-res">
+                <div class="header-mobile-left">
+                    <h1 class="header-mobile-left-content">
+                        PORTFOLIO
+                    </h1>
                 </div>
-            </div>
-            <div class="header-mobile-nav__box">
-               <ul class="mobile-nav__list">
-                   <li class="mobile-nav__list-child">About</li>
-                   <li class="mobile-nav__list-child"> Portfolio Of Work</li>
-                   <li class="mobile-nav__list-child"> Services</li>
-                   <li class="mobile-nav__list-child"> Testimonials</li>
-                   <li class="mobile-nav__list-child"> Contact</li>
-               </ul>
+                <div class="header-mobile-right">
+                    <div class="header-mobile__icon">
+                        <i  onclick="myclick()" class="icon-nav fa-solid fa-bars"></i>
+                    </div>
+                    <div class="header-mobile__nav" id="click-nav">
+                        <ul class="header-mobile__nav-list">
+                            <li class="header-mobile__nav-list-child header-mobile__nav-list-child-1">
+                                <a href="" class="mobile__nav-list-child-link">Home</a>
+                            </li>
+                            <li class="header-mobile__nav-list-child">
+                                <a href="https://onnerin.000webhostapp.com/about/" class="mobile__nav-list-child-link">About</a>
+                            </li>
+                            <li class="header-mobile__nav-list-child">
+                                <a href="https://onnerin.000webhostapp.com/work/" class="mobile__nav-list-child-link">Portfolio of work</a>
+                            </li>
+                            <li class="header-mobile__nav-list-child">
+                                <a href="" class="mobile__nav-list-child-link">Services</a>
+                            </li>
+                            <li class="header-mobile__nav-list-child">
+                                <a href="" class="mobile__nav-list-child-link">Testimonials</a>
+                            </li>
+                            <li class="header-mobile__nav-list-child">
+                                <a href="" class="mobile__nav-list-child-link">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
             </div>
         </div>
     
@@ -49,7 +65,7 @@
                             <a href="https://onnerin.000webhostapp.com/about/" class="about-link">About</a>
                         </li>
                         <li class="nav__list-child">
-                            <a href="https://onnerin.000webhostapp.com/about/" class="about-link"> Portfolio Of Work</a>
+                            <a href="https://onnerin.000webhostapp.com/work/" class="about-link"> Portfolio Of Work</a>
                         </li>
                         <li class="nav__list-child">
                             <a href="https://onnerin.000webhostapp.com/about/" class="about-link">Services</a>
@@ -100,5 +116,20 @@
     setTimeout(typing, 150,messIndex)
    }
    typing(0);
+   function myclick(){
+    document.getElementById("click-nav").classList.toggle("active-nav");
+}
+window.onclick=function(event){
+    if(!event.target.matches('.icon-nav')){
+        var down=document.getElementsByClassName("header-mobile__nav")
+        var i;
+        for( i=0 ; i<down.length; i++){
+            var open =down[i];
+                if(open.classList.contains('active-nav')){
+                    open.classList.remove('active-nav');
+                }
+        }
+    }
+}
 </script>
 </html>

@@ -22,4 +22,5 @@ html{
 }
 .app{
     overflow: hidden;
+    background-image: linear-gradient(to right, rgb(147, 240, 240),rgb(247, 164, 205)) !important;
 }
