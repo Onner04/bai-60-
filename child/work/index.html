@@ -4,35 +4,49 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="./access/main.css">
     <link rel="stylesheet" href="./access/base.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
     <div class="app">
-        <div class="header-mobile header-mobile-res">
-            <div class="header-mobile__left">
-                <h1 class="headee-mobile-pro">
-                    PORTFOLIO
-                </h1>
-            </div>
-            <div class="header-mobile-nav">
-                <div class="header-mobile-nav__img">
-
-                    <img src="./access/img/my view.jpg" alt="" class="header-mobile__img">
+        <div class="header-mobile mobile-nav" >
+            <div class="header-mobile-res">
+                <div class="header-mobile-left">
+                    <h1 class="header-mobile-left-content">
+                        PORTFOLIO
+                    </h1>
                 </div>
-            </div>
-            <div class="header-mobile-nav__box">
-               <ul class="mobile-nav__list">
-                   <li class="mobile-nav__list-child">About</li>
-                   <li class="mobile-nav__list-child"> Portfolio Of Work</li>
-                   <li class="mobile-nav__list-child"> Services</li>
-                   <li class="mobile-nav__list-child"> Testimonials</li>
-                   <li class="mobile-nav__list-child"> Contact</li>
-               </ul>
+                <div class="header-mobile-right">
+                    <div class="header-mobile__icon">
+                        <i  onclick="myclick()" class="icon-nav fa-solid fa-bars"></i>
+                    </div>
+                    <div class="header-mobile__nav" id="click-nav">
+                        <ul class="header-mobile__nav-list">
+                            <li class="header-mobile__nav-list-child header-mobile__nav-list-child-1">
+                                <a href="" class="mobile__nav-list-child-link">Home</a>
+                            </li>
+                            <li class="header-mobile__nav-list-child">
+                                <a href="https://onnerin.000webhostapp.com/about/" class="mobile__nav-list-child-link">About</a>
+                            </li>
+                            <li class="header-mobile__nav-list-child">
+                                <a href="https://onnerin.000webhostapp.com/work/" class="mobile__nav-list-child-link">Portfolio of work</a>
+                            </li>
+                            <li class="header-mobile__nav-list-child">
+                                <a href="" class="mobile__nav-list-child-link">Services</a>
+                            </li>
+                            <li class="header-mobile__nav-list-child">
+                                <a href="" class="mobile__nav-list-child-link">Testimonials</a>
+                            </li>
+                            <li class="header-mobile__nav-list-child">
+                                <a href="" class="mobile__nav-list-child-link">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
             </div>
         </div>
-
-        <header>
             <div class="header">
                 <div class="header-left">
                     <h1 class="header-left__pro">
@@ -42,20 +56,24 @@
                 <div class="header-nav">
                     <ul class="header-nav__list">
                         <li class="nav__list-child">
-                            About
+                            <a href="" class="nav__list-child-link">Home</a>
                         </li>
                         <li class="nav__list-child">
-                            Portfolio Of Work
+                            <a href="https://onnerin.000webhostapp.com/about/" class="nav__list-child-link">About</a>
                         </li>
                         <li class="nav__list-child">
-                            Services
+                            <a href="https://onnerin.000webhostapp.com/work/" class="nav__list-child-link">Portfolio Of Work</a>
                         </li>
                         <li class="nav__list-child">
-                            Testimonials
+                            <a href="" class="nav__list-child-link">Services</a>
                         </li>
                         <li class="nav__list-child">
-                            Contact
+                            <a href="" class="nav__list-child-link">Testimonials</a>
                         </li>
+                        <li class="nav__list-child">
+                            <a href="" class="nav__list-child-link">Contact</a>
+                        </li>
+                        
                     </ul>
                 </div>
 
@@ -76,81 +94,103 @@
                 <div class="container-work">
                     <ul class="container-work__list">
                         <li class="container-work__list-child">
-                            <span class="work__list-child-content"> Bài tập buổi 1</span>
+                            <input type="checkbox" hidden name="" class="check-select-1" id="tick-check-1">
+                            <label for="tick-check-1" class="work__list-child-content">
+                                
+                                <span class="work__list-child-content-1"> Bài tập buổi 1</span>
+
+                            </label>
                             
-                              <ul class="work__list-child">
-                                <li class="work__list-child-item">
-                                    <a href="">Bài 1</a>
+                            <ul class="work__list-child" id="select-item">
+                            <li class="work__list-child-item">
+                                    <a href="https://onnerin.000webhostapp.com/bu%e1%bb%95i%201/b%c3%a0i%201/">Bài 1</a>
                                 </li>
                                 <li class="work__list-child-item">
-                                    <a href="">Bài 2</a>
+                                    <a href="https://onnerin.000webhostapp.com/bu%e1%bb%95i%201/b%c3%a0i%202.1/">Bài 2.1</a>
                                 </li>
                                 <li class="work__list-child-item">
-                                    <a href="">Bài 3</a>
-                                </li>
-                               
-                              </ul>
-                        </li>
-                        <li class="container-work__list-child">
-                            <span class="work__list-child-content"> Bài tập buổi 2</span>
-                            <ul class="work__list-child">
+                                    <a href="https://onnerin.000webhostapp.com/bu%e1%bb%95i%201/b%c3%a0i%202.2/">Bài 2.2</a>
+                                </li> 
                                 <li class="work__list-child-item">
-                                    <a href="">Bài 1</a>
+                                    <a href="https://onnerin.000webhostapp.com/bu%e1%bb%95i%201/b%c3%a0i%202.3/">Bài 2.3</a>
                                 </li>
-                                <li class="work__list-child-item">
-                                    <a href="">Bài 2</a>
-                                </li>
-                                <li class="work__list-child-item">
-                                    <a href="">Bài 3</a>
+                                 <li class="work__list-child-item">
+                                    <a href="https://onnerin.000webhostapp.com/bu%e1%bb%95i%201/b%c3%a0i%203/">Bài 3</a>
                                 </li>
                                
                               </ul>
                         </li>
                         <li class="container-work__list-child">
-                            <span class="work__list-child-content"> Bài tập buổi 3</span>
-                            <ul class="work__list-child">
+                            <input type="checkbox" hidden name="" class="check-select-2" id="tick-check-2">
+                            <label for="tick-check-2" class="work__list-child-content">
+                                <span class="work__list-child-content-1"> Bài tập buổi 2</span>
+
+                            </label>
+                            <ul class="work__list-child" id="select-item">
                                 <li class="work__list-child-item">
-                                    <a href="">Bài 1</a>
+                                    <a href="https://onnerin.000webhostapp.com/bu%e1%bb%95i%202/b%c3%a0i%201/">Bài 1</a>
                                 </li>
                                 <li class="work__list-child-item">
-                                    <a href="">Bài 2</a>
+                                    <a href="https://onnerin.000webhostapp.com/bu%e1%bb%95i%202/b%c3%a0i%202.1/">Bài 2.1</a>
                                 </li>
                                 <li class="work__list-child-item">
-                                    <a href="">Bài 3</a>
+                                    <a href="https://onnerin.000webhostapp.com/bu%e1%bb%95i%202/b%c3%a0i%202.2/">Bài 2.2</a>
+                                </li>
+                                <li class="work__list-child-item">
+                                    <a href="https://onnerin.000webhostapp.com/bu%e1%bb%95i%202/b%c3%a0i%203.1/">Bài 3.1</a>
+                                </li>
+                                <li class="work__list-child-item">
+                                    <a href="https://onnerin.000webhostapp.com/bu%e1%bb%95i%202/b%c3%a0i%203.2/">Bài 3.2</a>
+                                </li>
+                                <li class="work__list-child-item">
+                                    <a href="https://onnerin.000webhostapp.com/bu%e1%bb%95i%202/b%c3%a0i%203.3/">Bài 3.3</a>
+                                </li>
+                                <li class="work__list-child-item">
+                                    <a href="https://onnerin.000webhostapp.com/bu%e1%bb%95i%202/b%c3%a0i%204/">Bài 4</a>
+                                </li>
+                               
+                               
+                              </ul>
+                        </li>
+                        <li class="container-work__list-child">
+                            <input type="checkbox" hidden name="" class="check-select-3" id="tick-check-3">
+                            <label for="tick-check-3" class="work__list-child-content">
+                                <span class="work__list-child-content-1"> Bài tập buổi 3</span>
+
+                            </label>
+                            <ul class="work__list-child" id="select-item">
+                                <li class="work__list-child-item">
+                                    <a href="https://onnerin.000webhostapp.com/bu%e1%bb%95i%203/b%c3%a0i%201/">Bài 1</a>
+                                </li>
+                                <li class="work__list-child-item">
+                                    <a href="https://onnerin.000webhostapp.com/bu%e1%bb%95i%203/b%c3%a0i%202/">Bài 2</a>
                                 </li>
                                
                               </ul>
                         </li>
                         <li class="container-work__list-child">
-                            <span class="work__list-child-content"> Bài tập buổi 4</span>
-                            <ul class="work__list-child">
+                            <input type="checkbox" hidden name="" class="check-select-4" id="tick-check-4">
+                            <label for="tick-check-4" class="work__list-child-content">
+                                <span class="work__list-child-content-1"> Bài tập buổi 4</span>
+
+                            </label>
+                            <ul class="work__list-child" id="select-item">
                                 <li class="work__list-child-item">
-                                    <a href="">Bài 1</a>
+                                    <a href="https://onnerin.000webhostapp.com/bu%e1%bb%95i%204/">Bài 1</a>
                                 </li>
                                 <li class="work__list-child-item">
-                                    <a href="">Bài 2</a>
+                                    <a href="https://onnerin.000webhostapp.com/bu%e1%bb%95i%204%20new/b%c3%a0i%203/">Bài 2</a>
                                 </li>
                                 <li class="work__list-child-item">
-                                    <a href="">Bài 3</a>
-                                </li>
-                               
-                              </ul>
-                        </li>
-                        <li class="container-work__list-child">
-                            <span class="work__list-child-content"> Bài tập buổi 5</span>
-                            <ul class="work__list-child">
-                                <li class="work__list-child-item">
-                                    <a href="">Bài 1</a>
+                                    <a href="https://onnerin.000webhostapp.com/bu%e1%bb%95i%204%20new/b%c3%a0i%204/">Bài 3</a>
                                 </li>
                                 <li class="work__list-child-item">
-                                    <a href="">Bài 2</a>
-                                </li>
-                                <li class="work__list-child-item">
-                                    <a href="">Bài 3</a>
+                                    <a href="https://onnerin.000webhostapp.com/bu%e1%bb%95i%204%20new/b%c3%a0i%205/">Bài 4</a>
                                 </li>
                                
                               </ul>
                         </li>
+                        
                     </ul>
                 </div>
             </div>
@@ -158,81 +198,67 @@
                 <div class="container-work">
                     <ul class="container-work__list container-work__list">
                         <li class="container-work__list-child">
-                            <span class="work__list-child-content"> Bài tập buổi 1</span>
+                            <input type="checkbox" hidden name="" class="check-select-5" id="tick-check-5">
+                            <label for="tick-check-5" class="work__list-child-content">
+                                <span class="work__list-child-content-1"> Bài tập buổi 5</span>
+
+                            </label>
+                            <ul class="work__list-child" id="select-item">
+                                <li class="work__list-child-item">
+                                    <a href="https://onnerin.000webhostapp.com/bu%e1%bb%95i%205/b%c3%a0i%201/">Bài 1</a>
+                                </li>
+                                <li class="work__list-child-item">
+                                    <a href="https://onnerin.000webhostapp.com/bu%e1%bb%95i%205/b%c3%a0i%202/">Bài 2</a>
+                                </li>
+                                <li class="work__list-child-item">
+                                    <a href="https://onnerin.000webhostapp.com/bu%e1%bb%95i%205/b%c3%a0i%203/">Bài 3</a>
+                                </li>
+                               
+                              </ul>
+                        </li>
+                        <li class="container-work__list-child">
+                            <input type="checkbox" hidden name="" class="check-select-6" id="tick-check-6">
+                            <label for="tick-check-6" class="work__list-child-content" >
+                                <span class="work__list-child-content-1"> Bài tập buổi 6</span>
+
+                            </label>
                             
-                              <ul class="work__list-child">
+                              <ul class="work__list-child" id="select-item">
                                 <li class="work__list-child-item">
-                                    <a href="">Bài 1</a>
+                                    <a href="https://onnerin.000webhostapp.com/bu%e1%bb%95i%206/b%c3%a0i%204/">Bài 1</a>
                                 </li>
                                 <li class="work__list-child-item">
-                                    <a href="">Bài 2</a>
+                                    <a href="https://onnerin.000webhostapp.com/bu%e1%bb%95i%206/b%c3%a0i%205/">Bài 2</a>
                                 </li>
                                 <li class="work__list-child-item">
-                                    <a href="">Bài 3</a>
+                                    <a href="https://onnerin.000webhostapp.com/bu%e1%bb%95i%206/b%c3%a0i%206/">Bài 3.1</a>
+                                </li>
+                                <li class="work__list-child-item">
+                                    <a href="https://onnerin.000webhostapp.com/bu%e1%bb%95i%206/b%c3%a0i%206.2/">Bài 3.2</a>
                                 </li>
                                
                               </ul>
                         </li>
-                        <li class="container-work__list-child">
-                            <span class="work__list-child-content"> Bài tập buổi 2</span>
+                        <li class="container-work__list-child" id="select-item">
+                            <input type="checkbox" hidden name="" class="check-select-7" id="tick-check-7">
+                            <label for="tick-check-7" class="work__list-child-content">
+                                <span class="work__list-child-content-1"> Bài tập buổi 7</span>
+
+                            </label>
                             <ul class="work__list-child">
                                 <li class="work__list-child-item">
-                                    <a href="">Bài 1</a>
+                                    <a href="http://127.0.0.1:5500/b7.html">Bài 1</a>
                                 </li>
                                 <li class="work__list-child-item">
-                                    <a href="">Bài 2</a>
+                                    <a href="https://onnerin.000webhostapp.com/bu%e1%bb%95i%207/b%c3%a0i%208/">Bài 2</a>
                                 </li>
-                                <li class="work__list-child-item">
-                                    <a href="">Bài 3</a>
-                                </li>
+                               
                                
                               </ul>
                         </li>
-                        <li class="container-work__list-child">
-                            <span class="work__list-child-content"> Bài tập buổi 3</span>
-                            <ul class="work__list-child">
-                                <li class="work__list-child-item">
-                                    <a href="">Bài 1</a>
-                                </li>
-                                <li class="work__list-child-item">
-                                    <a href="">Bài 2</a>
-                                </li>
-                                <li class="work__list-child-item">
-                                    <a href="">Bài 3</a>
-                                </li>
-                               
-                              </ul>
-                        </li>
-                        <li class="container-work__list-child">
-                            <span class="work__list-child-content"> Bài tập buổi 4</span>
-                            <ul class="work__list-child">
-                                <li class="work__list-child-item">
-                                    <a href="">Bài 1</a>
-                                </li>
-                                <li class="work__list-child-item">
-                                    <a href="">Bài 2</a>
-                                </li>
-                                <li class="work__list-child-item">
-                                    <a href="">Bài 3</a>
-                                </li>
-                               
-                              </ul>
-                        </li>
-                        <li class="container-work__list-child">
-                            <span class="work__list-child-content"> Bài tập buổi 5</span>
-                            <ul class="work__list-child">
-                                <li class="work__list-child-item">
-                                    <a href="">Bài 1</a>
-                                </li>
-                                <li class="work__list-child-item">
-                                    <a href="">Bài 2</a>
-                                </li>
-                                <li class="work__list-child-item">
-                                    <a href="">Bài 3</a>
-                                </li>
-                               
-                              </ul>
-                        </li>
+                        
+                      
+                        
                     </ul>
                 </div>
                 <div class="container-list container-list-2">
@@ -246,4 +272,35 @@
         </div>
     </div>
 </body>
+<script>
+    function myclick(){
+       document.getElementById('click-box-nav').classList.toggle('active')
+    }
+    // window.onclick=function(event){
+    //     if(!event.target.matches('.header-mobile-nav__img')){
+    //         var down=document.getElementsByClassName('header-mobile-nav__box')
+    //     }
+    //     for(var i=0 ; i<down.length; i++){
+    //         var open=down[i];
+    //         if(open.classList.contains('active')){
+    //             open.classList.remove(('active'));
+    //         }
+    //     }
+    // }
+    function myclick(){
+    document.getElementById("click-nav").classList.toggle("active-nav");
+}
+window.onclick=function(event){
+    if(!event.target.matches('.icon-nav')){
+        var down=document.getElementsByClassName("header-mobile__nav")
+        var i;
+        for( i=0 ; i<down.length; i++){
+            var open =down[i];
+                if(open.classList.contains('active-nav')){
+                    open.classList.remove('active-nav');
+                }
+        }
+    }
+}
+</script>
 </html>
