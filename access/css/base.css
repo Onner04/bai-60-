@@ -19,8 +19,10 @@ html{
     font-size: 62.5%;
     line-height: 1.6rem;
     -webkit-tap-highlight-color: transparent;
+    scroll-behavior: smooth;
 }
 .app{
     overflow: hidden;
     background-image: linear-gradient(to right, rgb(147, 240, 240),rgb(247, 164, 205));
+    
 }

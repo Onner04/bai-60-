@@ -38,6 +38,9 @@
     .footer-iframe {
         width: 30%;
     }
+    .btntop{
+        bottom: 150px;
+    }
     
 }
 @media (max-width:549px){

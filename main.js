@@ -125,3 +125,31 @@ window.onclick=function(event){
         }
     }
 }
+
+
+
+var header = document.querySelector(".header");
+var btntop = document.querySelector(".btntop");
+ 
+ 
+window.onscroll = function() {
+    scrollFunction()
+};
+
+
+
+function scrollFunction() {
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        header.classList.add('white-color')
+        btntop.style.display = "flex";
+    } else {
+        header.classList.remove('white-color')
+        btntop.style.display = "none";
+    }
+}
+
+
+btntop.onclick = function () {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
